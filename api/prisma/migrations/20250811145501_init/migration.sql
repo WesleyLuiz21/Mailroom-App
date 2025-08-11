@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "Parcel" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "recipient" TEXT NOT NULL,
+    "status" TEXT NOT NULL DEFAULT 'RECEIVED',
+    "arrivedAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
